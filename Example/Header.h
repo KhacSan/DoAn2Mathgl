@@ -1,13 +1,11 @@
 #pragma once
-#include <string>
+
+extern "C" __declspec(dllimport) double *plotting1DArrays(char* , double, double);
 
 
-double *plotting1DArrays(std::string function, double, double);
-
-
-double *plotting2DArrays(std::string function, double, double,
+extern "C" __declspec(dllimport) double *plotting2DArrays(char* , double, double,
 	double, double, double, double, double);
 
-double *plotting3DArrays(std::string function, double, double,
+extern "C" __declspec(dllimport) double *plotting3DArrays(char* , double, double,
 	double, double, double, double, double, double, double);
 
